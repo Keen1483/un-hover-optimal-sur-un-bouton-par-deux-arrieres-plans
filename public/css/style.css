@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.btn {
+  width: 12rem;
+  height: 5rem;
+  outline: none;
+  border: 1px solid #15dea5;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-style: italic;
+  margin: 5rem 0 0 8rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #15dea5;
+  position: relative;
+  z-index: 1;
+}
+.btn:hover .btn__bg {
+  opacity: 1;
+  border-radius: 1rem;
+}
+.btn__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #13c794;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */

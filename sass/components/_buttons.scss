@@ -1,0 +1,25 @@
+.btn {
+    width: 12rem;
+    height: 5rem;
+    outline: none;
+    border: 1px solid $clr-btn;
+    color: $clr-txt;
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-style: italic;
+    margin: 5rem 0 0 8rem;
+    box-sizing: border-box;
+    border-radius: $border-rad;
+    background-color: $clr-btn;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        & .btn__bg {
+            opacity: 1;
+            border-radius: $border-rad;
+        }
+    }
+    &__bg {
+        @include background-btn;
+    }
+}
